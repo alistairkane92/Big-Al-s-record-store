@@ -1,0 +1,45 @@
+BIG AL'S BIG RECORDS - big records for small prices
+
+
+what MUST be done:
+
+1 Create albums with the quantity that are in stock
+2 Create artists
+3 Show an inventory page listing albums and artists
+4 Show a stock level for the inventory items e.g. High/Medium/Low
+
+
+what should be done:
+
+1.  should have a function to add an album which has boxes for artist name, album name & quantity
+    artist name and album name get passed through from the database
+    dropdown box to select what artist by name and then a second dropdown box displaying their albums
+    a box to display current quantity on system
+    then type in a new quantity and click update box
+
+
+2.  a new erb page artist.erb which asks user to type in the new artist name
+    once the artist is added to the database you can then add an album to them
+
+3.  should have an inventory.erb similar to harry potter show.erb displaying artist name
+    album name and quantity left to right artist name album quantity
+
+4.  show a traffic light system for quantity amount if it goes below 5 it goes red for eg
+    should be able to see it on the inventory page
+
+
+
+
+what could be done:
+
+- Add a buy and sell price to each stock item
+- Calculate the possible markup on items and show on inventory page
+- Add a genre to an Album
+- Any other ideas you might come up with
+
+could add a release date to album
+could add a quantity sold tracker
+could add a collaborative record too with a third table to connect artists and a collab record
+could do a charts things you can say what place in the charts the record is
+could be able to sort it by descending order of lowest stock to highest/opposite/alphabetical or even
+    a search by name

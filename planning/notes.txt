@@ -1,0 +1,27 @@
+
+only one user to consider
+
+one to many relationship between artist/album
+one artist has many albums, one album has one artist
+
+
+DB & SQL
+
+                recordstore
+
+    artist                  album
+
+don't need a quantity table because this gets added manually by the user
+all CRUD functions
+
+CLASSES
+
+Artist.new(name)
+    @name
+
+Album.new(name)
+    @name
+
+Record.new(artist, album)
+    @artist
+    @album

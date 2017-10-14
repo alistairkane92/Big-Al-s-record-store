@@ -1,0 +1,11 @@
+file structure (project folder):
+    db -
+        seeds
+        sql runner
+    models -
+        artist
+        album
+    public  -
+        layout.css
+    controller.rb
+    tdd.rb
