@@ -17,7 +17,7 @@ class Artist
         SqlRunner.run(sql, values)
     end
 
-    def self.select_all()
+    def self.all()
         sql = "SELECT * FROM artists;"
         values = []
         results = SqlRunner.run(sql, values)

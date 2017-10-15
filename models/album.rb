@@ -19,7 +19,7 @@ class Album
         SqlRunner.run(sql, values)
     end
 
-    def self.select_all()
+    def self.all()
         sql = "SELECT * FROM albums;"
         values = []
         results = SqlRunner.run(sql, values)
