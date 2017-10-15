@@ -7,5 +7,5 @@ class Album
         @name = name
         @artist_id = artist_id
     end
-
+    
 end
