@@ -25,7 +25,3 @@ Artist.new(name)
 
 Album.new(name)
     @name
-
-Record.new(artist, album)
-    @artist
-    @album

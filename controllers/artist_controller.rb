@@ -3,7 +3,18 @@ require "sinatra/contrib/all"
 
 require_relative "../models/artist"
 
-get '/artist' do
+get '/recordstore/artists' do
     @artists = Artist.all()
-    erb(:index)
+    erb(:artists)
+end
+
+get '/recordstore/artists/new' do
+    @artists = Artist.all()
+    erb(:new_artist)
+end
+
+post '/recordstore/artists' do
+    @artist = Artist.new(params)
+    @artist.save()
+    erb(:artist_added)
 end

@@ -1,0 +1,7 @@
+<% @albums.each do |album| %>
+<article>
+<p> Artist ID: <%= album.id %></p>
+<p>Name: <%= album.name() %></p>
+
+<%= print album %>
+ <% end %>

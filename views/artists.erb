@@ -1,0 +1,17 @@
+<% @artists.each do |artist| %>
+<article>
+<p> Artist ID: <%= artist.id %></p>
+<p>Name: <%= artist.name() %></p>
+
+<div>
+<form action="/recordstore/artist/<%= artist.id %>" method="GET">
+  <input type="submit" value="Show Records" >
+</form>
+<%= print artist %>
+ <% end %>
+
+<body>
+ <form action="/recordstore/artists/new" method="GET">
+   <input type="submit" value="Add Artist">
+ </form>
+</body>
