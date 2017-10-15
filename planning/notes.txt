@@ -1,6 +1,10 @@
 
 only one user to consider
 
+does each album want to have a picture associated with it? where he could take
+a photo of an album and upload it. like a button that says upload your picture and
+it will fill a box with the picture to display
+
 one to many relationship between artist/album
 one artist has many albums, one album has one artist
 
