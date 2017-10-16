@@ -2,6 +2,25 @@ body {
     background-color: blue;
 }
 
+#menu-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: red;
+    align-items: center;
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 35px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
 #logo {
     border-radius: 10%;
     width: 100px;
