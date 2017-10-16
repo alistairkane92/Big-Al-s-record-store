@@ -6,14 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Big Al's Record Tracker</title>
     <link rel="stylesheet" href="/css/layout.css">
-    <link rel="icon" href="../images/record.jpg">
+    <link rel="icon" href="/images/record.jpg">
 </head>
 
 <body>
-<form action="/recordstore" method="GET">
-  <input type="submit" value="Home">
-</form>
-Layout
+<container id = "menu-header">
+<a href="/recordstore"><img src = "/images/logo.jpg" alt = "Logo" id = "logo"/></a>
+<ul>
+    <li a href = "/recordstore/artists/new">Add an Artist</li>
+    <li a href = "/recordstore/album/new">Add an Album</li>
+    <li a href = "/recordstore/albums">Inventory</li>
+</ul>
+
+</container>
+
+
 <%= yield %>
 </body>
+
+
+
 </html>

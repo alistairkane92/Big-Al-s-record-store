@@ -1,3 +1,12 @@
 body {
     background-color: blue;
 }
+
+#logo {
+    border-radius: 10%;
+    width: 100px;
+    padding-left: 2px;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+}
