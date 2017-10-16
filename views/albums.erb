@@ -5,7 +5,12 @@
 <p>Artist: <%= album.artist.name() %>
 <p>In Stock: <%= album.quantity() %> </p>
 <p>Genre: <%= album.genre() %> </p>
+<p>Bought for: <%= album.buy_price() %> </p>
+<p>Selling price: <%= album.sell_price() %> </p>
+<p>Profit margin: <%= album.margin() %> </p>
+<p>Sold this week: <%= album.sold() %> </p>
 <p>Stock Level: <%= album.stock_level() %></p>
+
 
 <form action="/recordstore/album/update/<%= album.id %>" method="GET">
   <input type="submit" value="Update Quantity">

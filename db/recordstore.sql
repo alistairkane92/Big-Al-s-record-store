@@ -13,5 +13,6 @@ CREATE TABLE albums(
     quantity INT4,
     genre VARCHAR(255),
     buy_price INT4,
-    sell_price INT4
+    sell_price INT4,
+    sold INT4
 );
