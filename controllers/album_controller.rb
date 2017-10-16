@@ -15,6 +15,10 @@ get '/recordstore/album/new' do
     erb(:new_album)
 end
 
+get '/recordstore/album/update' do
+    @albums = Album.all()
+    
+
 post '/recordstore/albums' do
     @albums = Album.new(params)
     @albums.save()

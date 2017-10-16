@@ -49,8 +49,7 @@ class Album
        sql = "SELECT * FROM artists WHERE id = $1;"
        values = [@artist_id]
        result = SqlRunner.run(sql, values)
-       artist_data = result.first()
-       artist_instance = Artist.new(artist_data)
+       array = result.map {|info| Artist.new(info)}
        #make function return name of artist only so it can be displayed on
        #albums page
      end
