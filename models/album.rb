@@ -3,7 +3,7 @@ require_relative "../db/sql_runner"
 
 class Album
 
-    attr_accessor :name, :artist_id, :quantity, :genre, :buy_price, :sell_price
+    attr_accessor :name, :artist_id, :quantity, :genre, :buy_price, :sell_price, :sold
     attr_reader :id
 
     def initialize(options)
@@ -67,5 +67,11 @@ class Album
         return "Low" if @quantity <= 5
         return "Medium" if @quantity <= 15
         return "High" if @quantity > 16
+    end
+
+    def margin()
+        gross_profit = @sold * @sell_price
+        net_profit = gross_profit - @buy_price
+        return net_profit
     end
 end
