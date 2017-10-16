@@ -1,7 +1,13 @@
 <% @albums.each do |album| %>
 <article>
-<p> Artist ID: <%= album.id %></p>
-<p>Name: <%= album.name() %></p>
 
+<p>Name: <%= album.name() %></p>
+<p>Artist: <%= album.artist() %>
+<p>In Stock: <%= album.quantity() %> </p>
+<p> Album ID: <%= album.id() %></p>
 <%= print album %>
  <% end %>
+
+ <form action="/recordstore/album/new" method="GET">
+   <input type="submit" value="Add Album">
+ </form>

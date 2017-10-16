@@ -50,7 +50,9 @@ class Album
        values = [@artist_id]
        result = SqlRunner.run(sql, values)
        artist_data = result.first()
-       return Artist.new(artist_data)
+       artist_instance = Artist.new(artist_data)
+       #make function return name of artist only so it can be displayed on
+       #albums page
      end
 
 end
