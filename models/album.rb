@@ -26,6 +26,13 @@ class Album
         return results.map{|result| Album.new(result)}
     end
 
+    def self.find(id)
+        sql = "SELECT * FROM albums WHERE id = $1"
+        values = [id]
+        album = SqlRunner.run( sql, values ).first
+        return Album.new( album )
+    end
+
     def save()
         sql = "INSERT INTO albums(name, artist_id, quantity) VALUES ($1, $2, $3) RETURNING id;"
         values = [@name, @artist_id, @quantity]
@@ -48,10 +55,8 @@ class Album
     def artist()
        sql = "SELECT * FROM artists WHERE id = $1;"
        values = [@artist_id]
-       result = SqlRunner.run(sql, values)
-       array = result.map {|info| Artist.new(info)}
-       #make function return name of artist only so it can be displayed on
-       #albums page
+       result = SqlRunner.run(sql, values).first
+       return Artist.new(result)
      end
 
 end

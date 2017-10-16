@@ -4,11 +4,10 @@
 <p>Name: <%= album.name() %></p>
 <p>Artist: <%= album.artist.name() %>
 <p>In Stock: <%= album.quantity() %> </p>
-<p> Album ID: <%= album.id() %></p>
-<form action="/recordstore/album/update" method="GET">
-  <input type="button" value="Update Quantity">
 
-<%= print album %>
+<form action="/recordstore/album/update/<%= album.id %>" method="GET">
+  <input type="submit" value="Update Quantity">
+ </form>
  <% end %>
 
  <form action="/recordstore/album/new" method="GET">
