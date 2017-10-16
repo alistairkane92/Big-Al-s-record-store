@@ -28,8 +28,6 @@ what should be done:
     should be able to see it on the inventory page
 
 
-
-
 what could be done:
 
 - Add a buy and sell price to each stock item

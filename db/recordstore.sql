@@ -10,5 +10,8 @@ CREATE TABLE albums(
     id SERIAL4 PRIMARY KEY,
     name VARCHAR(255),
     artist_id INT4 REFERENCES artists(id) ON DELETE CASCADE,
-    quantity INT4
+    quantity INT4,
+    genre VARCHAR(255),
+    buy_price INT4,
+    sell_price INT4
 );
