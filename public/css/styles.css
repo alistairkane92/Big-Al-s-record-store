@@ -82,6 +82,10 @@ a {
     padding: 50px;
 }
 
+#mic-image{
+    width: 1000px;
+    border-style:solid;
+}
 
 
 #inventory_title{
