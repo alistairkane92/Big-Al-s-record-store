@@ -29,7 +29,7 @@ end
 post '/recordstore/albums/delete/:id' do
     @album = Album.find(params['id'])
     @album.delete()
-    redirect to ('/recordstore/albums')
+    redirect to ("/recordstore/artists")
 end
 
 post '/recordstore/albums/update/:id' do

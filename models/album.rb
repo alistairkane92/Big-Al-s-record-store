@@ -72,7 +72,12 @@ class Album
 
     def margin()
         gross_profit = @sold * @sell_price
-        net_profit = gross_profit - @buy_price
+        net_profit = gross_profit - @total_buying_price
         return net_profit
+    end
+
+    def total_buying_price()
+        total = @buy_price * @quantity
+        return total
     end
 end

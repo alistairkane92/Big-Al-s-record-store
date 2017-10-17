@@ -31,7 +31,6 @@ h1 {
 }
 
 td, th {
-
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
@@ -63,7 +62,6 @@ a {
 #logo {
     border-radius: 10%;
     width: 100px;
-
 }
 
 #align-menu {
@@ -83,7 +81,7 @@ a {
 }
 
 #mic-image{
-    width: 1000px;
+    height: 500px;
     border-style:solid;
 }
 
@@ -105,9 +103,12 @@ a {
     padding: 10px;
 }
 
-#album_stats{
+#album_stats {
+    font-family: arial;
     text-align: center;
     text-transform: capitalize;
+    border-style: solid;
+
 }
 
 .btn {

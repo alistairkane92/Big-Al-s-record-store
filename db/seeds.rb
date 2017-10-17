@@ -21,10 +21,10 @@ album1.save()
 album2 = Album.new({"name" => "Kind of Blue", "artist_id" => artist2.id, "quantity" => 25, "genre" => "Jazz", "buy_price" => 2, "sell_price" => 15, "sold" => 3})
 album2.save()
 
-album3 = Album.new({"name" => "Random Access Memories", "artist_id" => artist3.id, "quantity" => 15, "genre" => "Funk", "buy_price" => 10, "sell_price" => 5, "sold" => 4})
+album3 = Album.new({"name" => "Random Access Memories", "artist_id" => artist3.id, "quantity" => 15, "genre" => "Funk", "buy_price" => 3, "sell_price" => 5, "sold" => 4})
 album3.save()
 
-album4 = Album.new({"name" => "Discovery", "artist_id" => artist3.id, "quantity" => 5, "genre" => "Funk", "buy_price" => 10, "sell_price" => 25, "sold" => 13})
+album4 = Album.new({"name" => "Discovery", "artist_id" => artist3.id, "quantity" => 5, "genre" => "Funk", "buy_price" => 4, "sell_price" => 25, "sold" => 13})
 album4.save()
 
 

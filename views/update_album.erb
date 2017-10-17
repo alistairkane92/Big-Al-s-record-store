@@ -1,8 +1,12 @@
+<br>
+
 <div id = "album_stats">
-<p> Artist: <%= @album.artist.name %>
+<p> Artist: <%= @album.artist.name %></p>
 <p> Album: <%= @album.name %></p>
 <p> Quantity: <%= @album.quantity %> </p>
 </div>
+
+<br>
 
 <div class = "input">
 <form action="/recordstore/albums/update/<%= @album.id %>" method="POST">
