@@ -31,6 +31,13 @@ h1 {
     display:flex;
     justify-content: center;
     font-family: 'Fascinate Inline', cursive;
+    color: black;
+}
+
+#main-image{
+    background-image: url("/images/recordshop.jpg");
+    height: 300px;
+    border-radius: 50%;
 }
 
 #logo {
@@ -65,10 +72,13 @@ h1 {
     text-shadow: rgb(255, 255, 255) 0px 1px 0px;
 }
 
+#btn:hover {
+    color: purple;
+}
+
 #btn_position{
     display: flex;
     justify-content: space-around;
-}
-
-
+    align-items: baseline;
+    padding: 50px;
 }
