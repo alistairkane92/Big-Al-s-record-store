@@ -10,7 +10,6 @@
         <th>Selling price</th>
         <th>Sold this week</th>
         <th>Profit margin</th>
-        <th>Stock Level</th>
     </tr>
         <td><%= album.name() %></td>
         <td><%=album.artist.name()%></td>
@@ -26,11 +25,11 @@
         <td><%= album.sold() %></td>
 
         <td><%= album.margin() %></td>
-
-        <td><%= album.stock_level() %></td>
 </table>
 
+<br>
 <form action="/recordstore/album/update/<%= album.id %>" method="GET">
-  <input type="submit" value="Update Quantity">
+  <input type="submit" value="Update Quantity" id = "btn">
  </form>
+ <br>
  <% end %>

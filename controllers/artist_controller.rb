@@ -24,3 +24,7 @@ post '/recordstore/artists/delete/:id' do
     @artist.delete()
     redirect to ('/recordstore/artists')
 end
+
+get "/recordstore/artist/:id" do
+    redirect to ('/recordstore/albums')
+end
