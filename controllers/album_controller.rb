@@ -26,6 +26,12 @@ post '/recordstore/albums' do
     erb(:album_added)
 end
 
+post '/recordstore/albums/delete/:id' do
+    @album = Album.find(params['id'])
+    @album.delete()
+    redirect to ('/recordstore/albums')
+end
+
 post '/recordstore/albums/update/:id' do
     @album = Album.new(params)
     @album.update()

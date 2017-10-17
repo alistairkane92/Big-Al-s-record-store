@@ -176,10 +176,12 @@ a {
 }
 
 .table{
-   font-family: arial, sans-serif;
+   font-family: Arial, sans-serif;
+   border-style: solid;
    border-collapse: collapse;
    width: 100%;
    text-transform: capitalize;
+   text-align: center;
 }
 
 .images{
