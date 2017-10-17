@@ -105,6 +105,11 @@ a {
     padding: 10px;
 }
 
+#album_stats{
+    text-align: center;
+    text-transform: capitalize;
+}
+
 .btn {
     box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset;
     background: linear-gradient(rgb(249, 249, 249) 5%, rgb(233, 233, 233) 100%) rgb(249, 249, 249);
@@ -174,6 +179,7 @@ a {
    font-family: arial, sans-serif;
    border-collapse: collapse;
    width: 100%;
+   text-transform: capitalize;
 }
 
 .images{
