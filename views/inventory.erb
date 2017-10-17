@@ -1,25 +1,23 @@
 <table class = "table">
     <tr>
-        <th>Artist</th>
         <th>Album Name</th>
+        <th>Artist</th>
         <th>Stock Level</th>
     </tr>
 
-<% @artists.each do |artist| %>
+<% @albums.each do |album| %>
     <tr>
-        <td><%= artist.name() %></td>
-        <% artist.albums.each do |album| %>
-        <td><%= album.name %></p></td>
+        <td><%= album.name() %></td>
+        <td><%= album.artist.name() %></td>
         <td><%= album.stock_level %></td>
-            <% end %>
-        <td><form action="/recordstore/artists/delete/<%=artist.id%>" method="POST">
+        <td><form action="/recordstore/artists/delete/<%=album.artist.id%>" method="POST">
             <input type="submit" value="Delete" id = "btn">
             </form>
         </td>
+        <% end %>
     </tr>
-<% end %>
 </table>
-
+<br>
 <form action="/recordstore/albums" method="GET">
     <input type="submit" value="View Albums" id = "btn">
 </form>

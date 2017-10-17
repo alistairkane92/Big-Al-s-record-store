@@ -6,7 +6,7 @@ require_relative "../models/album"
 get '/recordstore/albums' do
     @artists = Artist.all()
     @albums = Album.all()
-    erb(:albums)
+    erb(:finances)
 end
 
 get '/recordstore/album/new' do

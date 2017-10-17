@@ -99,7 +99,7 @@ h1 {
 
 #new_artist{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     background-color: black;
     font-family: 'Poiret One';
     font-size: 20px;
@@ -149,12 +149,14 @@ h1 {
 }
 
 .table{
+
    font-family: arial, sans-serif;
    border-collapse: collapse;
    width: 100%;
 }
 
 td, th {
+
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;

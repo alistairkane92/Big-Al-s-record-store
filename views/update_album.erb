@@ -3,18 +3,32 @@
 <p> Album: <%= @album.name %></p>
 <p> Quantity: <%= @album.quantity %> </p>
 
-<form action="/recordstore/albums/update/<%= @album.id %>" method="POST"id ="new_artist">
+<div id = "new_artist">
+<form action="/recordstore/albums/update/<%= @album.id %>" method="POST">
 
   <label for="quantity">New Quantity:</label>
   <input type="number" name="quantity">
-  <input type="submit" name="submit">
+
   <input type="hidden" name="name" value="<%=@album.name%>">
   <input type="hidden" name="artist_id" value="<%=@album.artist_id%>">
   <input type="hidden" name="id" value="<%=@album.id%>">
   <input type="hidden" name="genre" value="<%=@album.genre%>">
-  <input type="hidden" name="buy_price" value="<%=@album.buy_price%>">
-  <input type="hidden" name="sell_price" value="<%=@album.sell_price%>">
-  <input type="hidden" name="margin" value="<%=@album.margin%>">
-  <input type="hidden" name="sold" value="<%=@album.sold%>">
 
-</form>
+
+  <label for="buy_price">Buying Price(total):</label>
+  <input type="number" name="buy_price" value="<%=@album.buy_price%>">
+
+  <label for="sell_price">Selling Price</label>
+  <input type="number" name="sell_price" value="<%=@album.sell_price%>">
+
+  <label for="sold">Quantity Sold:</label>
+  <input type="number" name="sold" value="<%=@album.sold%>">
+
+  <input type="submit" name="submit">
+
+  </form>
+ </div>
+
+
+ <!--  could write a method that auto performs that function all big al needs to do is reduce the quantity
+and the rest will auto update-->

@@ -5,7 +5,8 @@ require_relative "../models/artist"
 
 get '/recordstore/artists' do
     @artists = Artist.all()
-    erb(:artists)
+    @albums = Album.all()
+    erb(:inventory)
 end
 
 get '/recordstore/artists/new' do
@@ -16,7 +17,7 @@ end
 post '/recordstore/artists' do
     @artist = Artist.new(params)
     @artist.save()
-    redirect to ('/recordstore/artists')
+    erb(:artist_added)
 end
 
 post '/recordstore/artists/delete/:id' do
