@@ -1,5 +1,6 @@
 body {
     background-color: white;
+    margin: 15px;
 }
 
 #menu-header{
@@ -83,16 +84,7 @@ h1 {
     padding: 50px;
 }
 
-.record{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    align-items: center;
-    font-family: 'Poiret One';
-    border-style: dashed;
-    padding: 10px;
-    font-style: italic;
-}
+
 
 #inventory_title{
     background-color: grey;
@@ -118,19 +110,41 @@ h1 {
     background-color: white;
     padding : 10px;
 }
+.record{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Poiret One';
+    border-style: dashed;
+    padding: 10px;
+    font-style: italic;
+}
 
 .albums{
     display: flex;
-    flex-direction;
+    justify-content: space-between;
+    flex-wrap: wrap;
     background-color: red;
+    width: 350px;
+
 }
 
-.stock{
-    background-color: blue;
-}
 
 #album_form{
     display: flex;
     justify-content: space-between;
     padding: 10px;
+}
+
+#img{
+    width: 700px;
+    height: 500px;
+    background-color: black;
+}
+
+#img-center{
+    display: flex;
+    justify-content: center;
+    padding: 2px;
 }

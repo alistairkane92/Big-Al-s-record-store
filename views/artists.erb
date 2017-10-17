@@ -9,19 +9,16 @@
 
 
 <% @artists.each do |artist| %>
-<div class = "record">
-<p><%= artist.name() %><p>
-    <p><% artist.albums.each do |album| %></p>
-    <div class = "albums">
+    <div class = "record">
+        <%= artist.name() %>
+        <p><% artist.albums.each do |album| %></p>
+        <div class = "albums">
         <p><%= album.name %></p>
-    </div>
-    <div class = "stock">
         <p><%= album.stock_level %></p>
+        </div>
+        <% end %>
+        <p><form action="/recordstore/artists/delete/<%=artist.id%>" method="POST">
+            <input type="submit" value="Delete" id = "btn"></p>
+        </form>
     </div>
-    <p><% end %></p>
-    <p><form action="/recordstore/artists/delete/<%=artist.id%>" method="POST">
-        <input type="submit" value="Delete" id = "btn"></p>
-    </form>
-</div>
-
-    <% end %>
+<% end %>
