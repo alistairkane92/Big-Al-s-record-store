@@ -1,4 +1,4 @@
-<% @albums.each do |album| %>
+
 
 <table class = "table">
     <tr>
@@ -12,6 +12,9 @@
         <th>Profit margin</th>
         <th></th>
     </tr>
+
+<% @albums.each do |album| %>
+
     <tr>
         <td><%= album.name() %></td>
         <td><%=album.artist.name()%></td>
@@ -30,9 +33,6 @@
         <td><form action="/recordstore/album/update/<%= album.id %>" method="GET">
           <input type="submit" value="Update Quantity" id = "btn">
       </form> </td>
-</table>
-
-<br>
-
- <br>
+  </tr>
  <% end %>
+</table>

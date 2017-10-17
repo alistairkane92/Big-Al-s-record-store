@@ -1,25 +1,25 @@
-
-
-<div id="inventory_title">
-    <p> Artist </p>
-    <p> Album </p>
-    <p> Stock Level </p>
-    <p> Delete </p>
-</div>
-
-<p>Click on each record for more information</p>
+<table class = "table">
+    <tr>
+        <th>Artist</th>
+        <th>Album Name</th>
+        <th>Stock Level</th>
+    </tr>
 
 <% @artists.each do |artist| %>
-    <a href = "/recordstore/artist/<%=artist.id%>">
-    <div class = "record">
-        <%= artist.name() %>
-        <p><% artist.albums.each do |album| %></p>
-        <p><%= album.name %></p>
-        <p><%= album.stock_level %></p>
-        <% end %>
-        <p><form action="/recordstore/artists/delete/<%=artist.id%>" method="POST">
-            <input type="submit" value="Delete" id = "btn"></p>
-        </form>
-    </div>
-    </a>
+    <tr>
+        <td><%= artist.name() %></td>
+        <% artist.albums.each do |album| %>
+        <td><%= album.name %></p></td>
+        <td><%= album.stock_level %></td>
+            <% end %>
+        <td><form action="/recordstore/artists/delete/<%=artist.id%>" method="POST">
+            <input type="submit" value="Delete" id = "btn">
+            </form>
+        </td>
+    </tr>
 <% end %>
+</table>
+
+<form action="/recordstore/albums" method="GET">
+    <input type="submit" value="View Albums" id = "btn">
+</form>
