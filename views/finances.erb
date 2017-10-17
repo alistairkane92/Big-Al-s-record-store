@@ -1,5 +1,3 @@
-
-
 <table class = "table">
     <tr>
         <th>Album Name</th>
@@ -19,20 +17,13 @@
         <td><%= album.name() %></td>
         <td><%=album.artist.name()%></td>
         <td><%= album.quantity() %></td>
-
         <td><%= album.genre() %></td>
-
         <td><%= album.buy_price() %></td>
-
         <td><%= album.sell_price() %></td>
-
         <td><%= album.sold() %></td>
-
         <td><%= album.margin() %></td>
-
         <td><form action="/recordstore/album/update/<%= album.id %>" method="GET">
-          <input type="submit" value="Update" id = "btn">
-      </form> </td>
+          <input type="submit" value="Update" class = "btn"> </form> </td>
   </tr>
  <% end %>
 </table>

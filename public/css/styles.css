@@ -14,6 +14,12 @@ body {
     padding: 25px;
 }
 
+h3 {
+    text-align: center;
+    border-style:solid;
+    padding : 10px;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -56,7 +62,7 @@ h1 {
     background-color: black;
 }
 
-#btn {
+.btn {
     box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset;
     background: linear-gradient(rgb(249, 249, 249) 5%, rgb(233, 233, 233) 100%) rgb(249, 249, 249);
     border-radius: 42px;
@@ -73,7 +79,7 @@ h1 {
     text-shadow: rgb(255, 255, 255) 0px 1px 0px;
 }
 
-#btn:hover {
+.btn:hover {
     color: purple;
 }
 
@@ -97,16 +103,17 @@ h1 {
     border-radius: 10px;
 }
 
-#new_artist{
+.input{
     display: flex;
     flex-direction: column;
     background-color: black;
     font-family: 'Poiret One';
     font-size: 20px;
     color: white;
+    text-align: center;
 }
 
-#new_artist_submit{
+.input_submit{
     background-color: white;
     padding : 10px;
 }
@@ -136,20 +143,19 @@ h1 {
     padding: 10px;
 }
 
-#img{
+.img{
     width: 700px;
     height: 500px;
     background-color: black;
 }
 
-#img-center{
+.img-center{
     display: flex;
     justify-content: center;
     margin: 10px;
 }
 
 .table{
-
    font-family: arial, sans-serif;
    border-collapse: collapse;
    width: 100%;
