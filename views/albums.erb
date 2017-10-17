@@ -1,33 +1,36 @@
-<table class = "table">
-    <tr>Album Name</tr>
-    <tr>Artist</tr>
-    <tr>Quantity</tr>
-    <tr>Genre</tr>
-    <tr>Total buying price</tr>
-    <tr>Selling price</tr>
-    <tr>Sold this week</tr>
-    <tr>Profit margin</tr>
-    <tr>Stock Level</tr>
-</table>
-
 <% @albums.each do |album| %>
 
-<p>Album Name: <%= album.name() %></p>
-<p>Artist: <%= album.artist.name() %>
-<p>In Stock: <%= album.quantity() %> </p>
-<p>Genre: <%= album.genre() %> </p>
-<p>Total buying price: <%= album.buy_price() %> </p>
-<p>Selling price: <%= album.sell_price() %> </p>
-<p>Sold this week: <%= album.sold() %> </p>
-<p>Profit margin: <%= album.margin() %> </p>
-<p>Stock Level: <%= album.stock_level() %></p>
+<table class = "table">
+    <tr>
+        <th>Album Name</th>
+        <th>Artist</th>
+        <th>Quantity</th>
+        <th>Genre</th>
+        <th>Total buying price</th>
+        <th>Selling price</th>
+        <th>Sold this week</th>
+        <th>Profit margin</th>
+        <th>Stock Level</th>
+    </tr>
+        <td><%= album.name() %></td>
+        <td><%=album.artist.name()%></td>
 
+        <td><%= album.quantity() %></td>
+
+        <td><%= album.genre() %></td>
+
+        <td><%= album.buy_price() %></td>
+
+        <td><%= album.sell_price() %></td>
+
+        <td><%= album.sold() %></td>
+
+        <td><%= album.margin() %></td>
+
+        <td><%= album.stock_level() %></td>
+</table>
 
 <form action="/recordstore/album/update/<%= album.id %>" method="GET">
   <input type="submit" value="Update Quantity">
  </form>
  <% end %>
-
- <form action="/recordstore/album/new" method="GET">
-   <input type="submit" value="Add Album">
- </form>
