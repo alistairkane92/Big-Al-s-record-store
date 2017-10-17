@@ -64,6 +64,7 @@ class Album
      end
 
      def stock_level()
+        return "None" if @quantity == 0
         return "Low" if @quantity <= 5
         return "Medium" if @quantity <= 15
         return "High" if @quantity > 16

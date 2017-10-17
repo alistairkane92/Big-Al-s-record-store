@@ -1,4 +1,4 @@
-<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+
 
 <div id="inventory_title">
     <p> Artist </p>
@@ -11,8 +11,8 @@
 <% @artists.each do |artist| %>
     <div class = "record">
         <%= artist.name() %>
-        <p><% artist.albums.each do |album| %></p>
         <div class = "albums">
+        <p><% artist.albums.each do |album| %></p>
         <p><%= album.name %></p>
         <p><%= album.stock_level %></p>
         </div>

@@ -1,7 +1,18 @@
-<% @albums.each do |album| %>
-<article>
+<table class = "table">
+    <tr>Album Name</tr>
+    <tr>Artist</tr>
+    <tr>Quantity</tr>
+    <tr>Genre</tr>
+    <tr>Total buying price</tr>
+    <tr>Selling price</tr>
+    <tr>Sold this week</tr>
+    <tr>Profit margin</tr>
+    <tr>Stock Level</tr>
+</table>
 
-<p>Name: <%= album.name() %></p>
+<% @albums.each do |album| %>
+
+<p>Album Name: <%= album.name() %></p>
 <p>Artist: <%= album.artist.name() %>
 <p>In Stock: <%= album.quantity() %> </p>
 <p>Genre: <%= album.genre() %> </p>

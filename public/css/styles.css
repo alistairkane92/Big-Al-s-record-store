@@ -113,7 +113,7 @@ h1 {
 .record{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     font-family: 'Poiret One';
     border-style: dashed;
@@ -124,7 +124,6 @@ h1 {
 .albums{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     background-color: red;
     width: 350px;
 
@@ -147,4 +146,16 @@ h1 {
     display: flex;
     justify-content: center;
     padding: 2px;
+}
+
+.table{
+   font-family: arial, sans-serif;
+   border-collapse: collapse;
+   width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
