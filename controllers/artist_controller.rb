@@ -16,10 +16,11 @@ end
 post '/recordstore/artists' do
     @artist = Artist.new(params)
     @artist.save()
-    erb(:artist_added)
+    redirect to ('/recordstore/artists')
 end
 
 post '/recordstore/artists/delete/:id' do
     @artist = Artist.find(params["id"])
     @artist.delete()
+    redirect to ('/recordstore/artists')
 end

@@ -17,7 +17,7 @@ end
 
 get '/recordstore/album/update/:id' do
     @album = Album.find(params["id"].to_i)
-    erb(:update_album)
+    redirect to ("/recordstore/artists")
 end
 
 post '/recordstore/albums' do

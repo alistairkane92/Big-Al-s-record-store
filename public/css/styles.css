@@ -67,7 +67,7 @@ h1 {
     font-weight: bold;
     font-family: arial;
     font-style: italic;
-    padding: 32px 76px;
+    padding: 12px 36px;
     text-decoration: none;
     text-shadow: rgb(255, 255, 255) 0px 1px 0px;
 }
@@ -83,23 +83,54 @@ h1 {
     padding: 50px;
 }
 
-.artist{
+.record{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
     font-family: 'Poiret One';
     border-style: dashed;
-    padding: 5px;
+    padding: 10px;
     font-style: italic;
 }
 
 #inventory_title{
-    background-color: red;
+    background-color: grey;
+    color: white;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    font-family: 'Poiret One';
+    font-weight: bold;
+    border-radius: 10px;
 }
 
-#artist_position{
-    margin-left: auto;
+#new_artist{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-family: 'Poiret One';
+    font-size: 20px;
+    color: white;
+}
+
+#new_artist_submit{
+    background-color: white;
+    padding : 10px;
+}
+
+.albums{
+    display: flex;
+    flex-direction;
+    background-color: red;
+}
+
+.stock{
+    background-color: blue;
+}
+
+#album_form{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
