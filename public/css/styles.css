@@ -82,3 +82,24 @@ h1 {
     align-items: baseline;
     padding: 50px;
 }
+
+.artist{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Poiret One';
+    border-style: dashed;
+    padding: 5px;
+    font-style: italic;
+}
+
+#inventory_title{
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#artist_position{
+    margin-left: auto;
+}

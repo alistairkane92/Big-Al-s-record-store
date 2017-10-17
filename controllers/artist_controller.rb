@@ -18,3 +18,8 @@ post '/recordstore/artists' do
     @artist.save()
     erb(:artist_added)
 end
+
+post '/recordstore/artists/delete/:id' do
+    @artist = Artist.find(params["id"])
+    @artist.delete()
+end

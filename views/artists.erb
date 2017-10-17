@@ -1,14 +1,22 @@
-<% @artists.each do |artist| %>
-<article>
-<p> Artist ID: <%= artist.id %></p>
-<p>Name: <%= artist.name() %></p>
-<p>Albums: <% artist.albums.each do |album| %>
-<%= album.name %> </p>
-<% end %>
-<% end %>
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 
-<body>
- <form action="/recordstore/artists/new" method="GET">
-   <input type="submit" value="Add Artist">
- </form>
-</body>
+<div id="inventory_title">
+    <p> Artist </p>
+    <p> Album </p>
+</div>
+
+
+<div id="artist_position">
+    <% @artists.each do |artist| %>
+    <div class ="artist">
+
+    <%= artist.name() %>
+    <% artist.albums.each do |album| %>
+    <%= album.name %>
+    <% end %>
+    <form action="/recordstore/artists/delete/<%=artist.id%>" method="POST">
+        <input type="submit" value="Delete">
+    </form>
+    </div>
+    <% end %>
+</div>
