@@ -1,0 +1,74 @@
+body {
+    background-color: white;
+}
+
+#menu-header{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 30px;
+    margin: 10px;
+    border-radius: 50%;
+    padding: 25px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    list-style-type: none;
+}
+
+li:not(:first-child):before {
+    content: " | ";
+}
+
+h1 {
+    display:flex;
+    justify-content: center;
+    font-family: 'Fascinate Inline', cursive;
+}
+
+#logo {
+    border-radius: 10%;
+    width: 100px;
+
+}
+
+#align-menu {
+    border-radius: 10px;
+    margin: 0px;
+    padding: 8px;
+    display:flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+#btn {
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset;
+    background: linear-gradient(rgb(249, 249, 249) 5%, rgb(233, 233, 233) 100%) rgb(249, 249, 249);
+    border-radius: 42px;
+    border: 5px solid rgb(220, 220, 220);
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(102, 102, 102);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: arial;
+    font-style: italic;
+    padding: 32px 76px;
+    text-decoration: none;
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+}
+
+#btn_position{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+}
