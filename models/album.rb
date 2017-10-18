@@ -57,13 +57,13 @@ class Album
     end
 
     def artist()
-       sql = "SELECT * FROM artists WHERE id = $1;"
-       values = [@artist_id]
-       result = SqlRunner.run(sql, values).first
-       return Artist.new(result)
-     end
+        sql = "SELECT * FROM artists WHERE id = $1;"
+        values = [@artist_id]
+        result = SqlRunner.run(sql, values).first
+        return Artist.new(result)
+    end
 
-     def stock_level()
+    def stock_level()
         return "None" if @quantity == 0
         return "Low" if @quantity <= 5
         return "Medium" if @quantity <= 15
@@ -84,5 +84,4 @@ class Album
         margin = total_sell_amount - total_buying_price
         return margin
     end
-
 end

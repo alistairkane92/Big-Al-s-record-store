@@ -1,45 +1,45 @@
 <br>
 
 <div id = "album_stats">
-<p> Artist: <%= @album.artist.name %></p>
-<p> Album: <%= @album.name %></p>
-<p> Quantity: <%= @album.quantity %> </p>
+    <p> Artist: <%= @album.artist.name %></p>
+    <p> Album: <%= @album.name %></p>
+    <p> Quantity: <%= @album.quantity %> </p>
 </div>
 
 <br>
 
 <div class = "input">
-<form class = "form" action="/recordstore/albums/update/<%= @album.id %>" method="POST">
+    <form class = "form" action="/recordstore/albums/update/<%= @album.id %>" method="POST">
 
-  <label>New Quantity:</label>
-  <input type="number" name="quantity">
+        <label>New Quantity:</label>
+        <input type="number" name="quantity">
 
-  <input type="hidden" name="name" value="<%=@album.name%>">
-  <input type="hidden" name="artist_id" value="<%=@album.artist_id%>">
-  <input type="hidden" name="id" value="<%=@album.id%>">
-  <input type="hidden" name="genre" value="<%=@album.genre%>">
+        <input type="hidden" name="name" value="<%=@album.name%>">
+        <input type="hidden" name="artist_id" value="<%=@album.artist_id%>">
+        <input type="hidden" name="id" value="<%=@album.id%>">
+        <input type="hidden" name="genre" value="<%=@album.genre%>">
 
 
-  <label>Buying Price(per unit):</label>
-  <input type="number" name="buy_price" value="<%=@album.buy_price%>">
+        <label>Buying Price(per unit):</label>
+        <input type="number" name="buy_price" value="<%=@album.buy_price%>">
 
-  <label>Selling Price</label>
-  <input type="number" name="sell_price" value="<%=@album.sell_price%>">
+        <label>Selling Price</label>
+        <input type="number" name="sell_price" value="<%=@album.sell_price%>">
 
-  <label>Quantity Sold:</label>
-  <input type="number" name="sold" value="<%=@album.sold%>">
+        <label>Quantity Sold:</label>
+        <input type="number" name="sold" value="<%=@album.sold%>">
 
-  <input type="submit" name="submit">
+        <input type="submit" name="submit">
 
-  </form>
- </div>
+    </form>
+</div>
 <br/>
- <div class = "img-center">
-     <form action="/recordstore/albums" method="GET">
-       <input type="submit" value="Back to Finances" class = "btn">
-      </form>
-  </div>
+<div class = "img-center">
+    <form action="/recordstore/albums" method="GET">
+        <input type="submit" value="Back to Finances" class = "btn">
+    </form>
+</div>
 <br/>
- <div class ="img-center">
- <img src = "/images/mic.jpg" alt = "mic" id = "mic-image">
- </div>
+<div class ="img-center">
+    <img src = "/images/mic.jpg" alt = "mic" id = "mic-image">
+</div>
