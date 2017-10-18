@@ -67,7 +67,7 @@ class Album
         return "None" if @quantity == 0
         return "Low" if @quantity <= 5
         return "Medium" if @quantity <= 15
-        return "High" if @quantity > 16
+        return "High" if @quantity >= 16
     end
 
     def total_sell_amount()
