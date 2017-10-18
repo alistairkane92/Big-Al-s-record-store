@@ -42,6 +42,7 @@ a {
     text-decoration: none;
 }
 
+
 #menu-header {
     display: flex;
     background-color: white;
@@ -65,12 +66,13 @@ a {
 }
 
 #align-menu {
-    border-radius: 10px;
+    border-radius: 30px;
     margin: 0px;
     padding: 8px;
     display:flex;
     justify-content: space-around;
     background-color: black;
+    border-style: double;
 }
 
 #btn_position{
