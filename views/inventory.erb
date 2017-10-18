@@ -6,6 +6,7 @@
         <th>Stock Level</th>
         <th>Artist</th>
         <th>Album</th>
+        <th>View Record</th>
     </tr>
 
 <% @albums.each do |album| %>
@@ -19,6 +20,10 @@
         </td>
         <td><form action="/recordstore/albums/delete/<%=album.id%>" method="POST">
             <input type="submit" value="Delete Album" class = "btn">
+            </form>
+        </td>
+        <td><form action="/recordstore/album/update/<%=album.id%>" method="GET">
+            <input type="submit" value="View Record" class = "btn">
             </form>
         <% end %>
     </tr>

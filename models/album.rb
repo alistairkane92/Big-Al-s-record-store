@@ -70,14 +70,19 @@ class Album
         return "High" if @quantity > 16
     end
 
-    def margin()
+    def total_sell_amount()
         gross_profit = @sold * @sell_price
-        net_profit = gross_profit - @total_buying_price
-        return net_profit
+        return gross_profit
     end
 
     def total_buying_price()
         total = @buy_price * @quantity
         return total
     end
+
+    def margin()
+        margin = total_sell_amount - total_buying_price
+        return margin
+    end
+
 end

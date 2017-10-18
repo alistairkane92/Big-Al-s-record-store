@@ -6,8 +6,8 @@
         <th>Genre</th>
         <th>Total buying price</th>
         <th>Selling price</th>
-        <th>Sold this week</th>
-        <th>Profit margin</th>
+        <th>Amount sold</th>
+        <th>Margin</th>
         <th></th>
     </tr>
 
@@ -15,11 +15,11 @@
 
     <tr>
         <td><%= album.name() %></td>
-        <td><%=album.artist.name()%></td>
+        <td><%= album.artist.name()%></td>
         <td><%= album.quantity() %></td>
         <td><%= album.genre() %></td>
-        <td><%= album.buy_price() %></td>
-        <td><%= album.sell_price() %></td>
+        <td><%= album.total_buying_price() %></td>
+        <td><%= album.sell_price %></td>
         <td><%= album.sold() %></td>
         <td><%= album.margin() %></td>
         <td><form action="/recordstore/album/update/<%= album.id %>" method="GET">
