@@ -11,7 +11,7 @@
 <div class = "input">
 <form class = "form" action="/recordstore/albums/update/<%= @album.id %>" method="POST">
 
-  <label for="quantity">New Quantity:</label>
+  <label>New Quantity:</label>
   <input type="number" name="quantity">
 
   <input type="hidden" name="name" value="<%=@album.name%>">
@@ -20,13 +20,13 @@
   <input type="hidden" name="genre" value="<%=@album.genre%>">
 
 
-  <label for="buy_price">Buying Price(per unit):</label>
+  <label>Buying Price(per unit):</label>
   <input type="number" name="buy_price" value="<%=@album.buy_price%>">
 
-  <label for="sell_price">Selling Price</label>
+  <label>Selling Price</label>
   <input type="number" name="sell_price" value="<%=@album.sell_price%>">
 
-  <label for="sold">Quantity Sold:</label>
+  <label>Quantity Sold:</label>
   <input type="number" name="sold" value="<%=@album.sold%>">
 
   <input type="submit" name="submit">
