@@ -151,7 +151,7 @@ album26.save()
 album27 = Album.new({"name" => "Sgt Pepper's Lonely Hearts Club Band", "artist_id" => artist4.id, "quantity" => 18, "genre" => "Pop", "buy_price" => 3, "sell_price" => 15, "sold" => 7})
 album27.save()
 
-album28 = Album.new({"name" => "I Dreamed A Dream", "artist_id" => artist21.id, "quantity" => 4, "genre" => "Susan Boyle", "buy_price" => 5, "sell_price" => 20, "sold" => 70})
+album28 = Album.new({"name" => "I Dreamed A Dream", "artist_id" => artist21.id, "quantity" => 1, "genre" => "Susan Boyle", "buy_price" => 5, "sell_price" => 20, "sold" => 70})
 album28.save()
 
 
