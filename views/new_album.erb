@@ -3,15 +3,15 @@
 <div class = "input">
 <form action="/recordstore/albums" method="POST" class = "form">
 
-  <label for="name">Album Name:</label>
+  <label>Album Name:</label>
   <input type="text" name="name">
 
-  <label for="quantity">Quantity:</label>
+  <label>Quantity:</label>
   <input type="number" name="quantity">
 
-  <label for="artist_id">Artist</label>
+  <label>Artist</label>
   <select name="artist_id">
-      <option name="Select Artist">Select Artist </option>
+      <option>Select Artist </option>
       <% for artist in @artists %>
       <option value="<%= artist.id %>">
       <%= artist.name() %>
@@ -19,9 +19,9 @@
       <% end %>
   </select>
 
-  <label for="genre">Genre</label>
+  <label>Genre</label>
   <select name="genre">
-      <option name="Select Genre">Select Genre</option>
+      <option>Select Genre</option>
       <option value="Pop">Pop</option>
       <option value="Rock">Rock</option>
       <option value="Electronic">Electronic</option>
